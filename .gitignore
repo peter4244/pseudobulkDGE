@@ -1,0 +1,25 @@
+# R / RStudio
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+.Rproj.user
+*.Rcheck/
+
+# Built package artifacts
+*.tar.gz
+*.tgz
+src/*.o
+src/*.so
+src/*.dll
+inst/doc/
+
+# renv (we don't ship a lock with the package; consumers manage their own)
+renv/library/
+
+# macOS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+.claude/

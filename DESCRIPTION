@@ -1,0 +1,46 @@
+Package: pseudobulkDGE
+Type: Package
+Title: Pseudobulk Differential Gene Expression for Single-Cell / Single-Nucleus RNA-seq
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Peter", "Castaldi", email = "peter4244@gmail.com",
+           role = c("aut", "cre")))
+Description: Reusable pipeline for cell-type pseudobulk differential gene
+    expression on multi-subject single-cell or single-nucleus RNA-seq data.
+    Accepts either a Seurat object or a directory of per-sample 10x mtx
+    triplets (with cell_metadata.tsv carrying sample_id and cell-type
+    annotation), aggregates to per-(sample x cell-type) pseudobulk, and
+    runs both limma/voom (with optional voomWithQualityWeights and
+    candidate-gene force-retention) and dreamlet (precision-weighted
+    pseudobulk) differential expression. Includes parameterized Rmd
+    templates that produce HTML reports following lab conventions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+Depends:
+    R (>= 4.1.0)
+Imports:
+    dplyr,
+    tibble,
+    tidyr,
+    readr,
+    Matrix,
+    methods,
+    edgeR,
+    limma,
+    dreamlet,
+    variancePartition,
+    SingleCellExperiment,
+    S4Vectors,
+    SummarizedExperiment
+Suggests:
+    Seurat,
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown,
+    ggplot2,
+    DT,
+    patchwork
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
