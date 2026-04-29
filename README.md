@@ -149,8 +149,9 @@ The dreamlet vs. limma/voom design and the choice of avoiding ZINB
 methods are grounded in the 2021–2025 single-cell DE benchmark
 literature (Squair 2021 *Nat Commun*, Murphy & Skene 2022, Junttila
 2022, Lee & Han 2024, Heumos 2025), with primary-source quotes
-catalogued in the LTRC repo at
-`results/differential_expression/COPD_status/de_methods_literature_review_2026.md`.
+catalogued in
+[`de_methods_literature_review_2026.md`](de_methods_literature_review_2026.md)
+in the package root.
 
 ## Status
 
